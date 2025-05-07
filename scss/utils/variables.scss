@@ -1,0 +1,19 @@
+// Colors
+$primary-color: #052630;
+$secondary-color: lighten($primary-color, 75%);
+$text-color: darken($primary-color, 10%);
+
+// Typography
+$font-mono: 'Maritan Mono', monospace;
+$font-base-size: 16px;
+
+// Breakpoints
+$breakpoints: (
+  'small': 576px,
+  'medium': 768px,
+  'large': 992px,
+  'xlarge': 1200px
+);
+
+// Spacing
+$gutter: 1rem;
