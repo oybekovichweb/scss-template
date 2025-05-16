@@ -107,7 +107,7 @@ p {
   background: hsla(271, 9%, 17%, 1);
   color: white;
   height: 100vh;
-  background-image: url(../../images/bg-pattern-mobile-nav.svg);
+  background-image: url(../images/bg-pattern-mobile-nav.svg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: bottom;
@@ -349,7 +349,7 @@ p {
       top: 494px;
       left: 0;
       /* Adjust as needed */
-      background-image: url("../../images/bg-pattern-intro-left-desktop.svg");
+      background-image: url("../images/bg-pattern-intro-left-desktop.svg");
       background-repeat: no-repeat;
       z-index: 1;
   }
@@ -362,7 +362,7 @@ p {
       right: 0;
       top: -1px;
       /* Adjust as needed */
-      background-image: url("../../images/bg-pattern-intro-right-desktop.svg");
+      background-image: url("../images/bg-pattern-intro-right-desktop.svg");
       background-repeat: no-repeat;
       background-position: right top;
       z-index: 1;
@@ -506,7 +506,7 @@ p {
       flex-direction: row;
       justify-content: space-evenly;
       position: relative;
-      background-image: url('./images/bg-pattern-how-we-work-desktop.svg');
+      background-image: url('../images/bg-pattern-how-we-work-desktop.svg');
       background-repeat: no-repeat;
       background-position: top right;
       padding: 2rem;
