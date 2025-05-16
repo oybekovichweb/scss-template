@@ -1,0 +1,48 @@
+:root {
+  --dark-violet: hsl(256, 26%, 20%);
+  --greyish-blue: hsl(216, 30%, 68%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", serif;
+  font-size: 16px;
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 200px;
+  line-height: 1.625rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  /* Ensure pseudo-elements are positioned relative to this container */
+  z-index: 2;
+  /* Adjust stacking order if necessary */
+}
