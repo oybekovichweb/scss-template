@@ -1,313 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./css/output.css" />
-
-  <title>Tech book club</title>
+  <title>Sunnyside Agency</title>
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-  <div class="flex flex-col justify-center w-full gap-32 ">
-    <div class="w-full bg-right-top bg-no-repeat bg-light bg-glow lg:gap-16 ">
-      <div class="w-11/12 pt-6 pb-12 m-auto nav lg:w-9/12 md:10/12">
-        <img src="../images/logo.svg" alt="" class="logo" />
-
+  <header class="header">
+    <nav class="nav container">
+      <div class="logo">sunnyside</div>
+      <ul class="nav__links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#" class="nav__btn">Contact</a></li>
+      </ul>
+      <div class="nav__mobile-icon">
+        <img src="../images/icon-hamburger.svg" alt="menu">
       </div>
-      <div class="w-11/12 m-auto lg:justify-center lg:items-stretch lg:flex hero lg:gap-16 lg:w-9/12 md:10/12 ">
-        <div class="flex flex-col items-start justify-center gap-6 mb-8 hero_notes">
-          <h1 class="text-4xl font-bold tracking-tight md:text-6xl lg:w-full hero-gradient font-Martian md:w-4/5">
-            Join the ultimate tech book club
-          </h1>
-          <p class="text-xl font-normal tracking-tighter lg:w-full text-neutral-dark font-Inter md:w-10/12">
-            Turn your reading time into learning time with fellow tech enthusiasts.
-            Get curated recommendations, join vibrant discussions, and level up your
-            skills one chapter at a time.
-          </p>
-          <div class="flex flex-col items-start justify-center gap-5 hero_options lg:w-full">
-            <a class="flex items-center justify-center w-full gap-4 py-4 text-base font-semibold tracking-tighter uppercase border-2 rounded-lg lg:hover:outline lg:hover:outline-2 lg:hover:outline-neutral-verydark bg-salmon-default lg:w-9/12 md:w-7/12 border-neutral-verydark font-Martian text-neutral-verydark"
-              href="#">Review membership options
-              <img src="../images/icon-arrow-down.svg" alt="icon-arrow-down" /></a>
-            <div class="flex justify-center gap-6 mb-16 options_bottom">
-              <img src="../images/image-avatars.webp" alt="image-avatars" class="testimonial_images max-sm:w-1/2" />
-              <div class="flex flex-col items-start justify-center rating">
-                <div class="flex items-start justify-start star_images">
-                  <img src="../images/icon-star.svg" alt="icon-star" />
-                  <img src="../images/icon-star.svg" alt="icon-star" />
-                  <img src="../images/icon-star.svg" alt="icon-star" />
-                  <img src="../images/icon-star.svg" alt="icon-star" />
-                  <img src="../images/icon-star.svg" alt="icon-star" />
-                </div>
-                <p class="text-sm font-Martian text-neutral-dark">
-                  200+ developers joined already
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <picture>
-          <source srcset="/assets/images/image-hero-desktop.webp" media="(min-width: 1200px)" />
-          <source srcset="/assets/images/image-hero-tablet.webp" media="(min-width: 768px)" />
-          <source srcset="/assets/images/image-hero-mobile.webp" media="(max-width: 767px)" />
-          <img class="object-cover h-auto mb-16 rounded-3xl" src="../images/image-read-together-mobile.webp"
-            alt="image-hero" />
-        </picture>
-      </div>
+    </nav>
+    <div class="hero">
+      <h1>We are creatives</h1>
+      <img src="../images/icon-arrow-down.svg" alt="Arrow Down" class="hero__arrow" />
     </div>
+  </header>
 
-    <div class="flex flex-col items-start justify-center w-11/12 gap-16 m-auto main lg:gap-16 lg:w-9/12 md:10/12 ">
-      <div
-        class="flex flex-col items-start justify-center gap-10 first_item lg:flex-row-reverse lg:gap-20 lg:items-center">
-        <div class="flex flex-col items-start justify-start gap-6 first_item_texts lg:w-full">
-          <h2
-            class="text-4xl font-semibold font-Martian tracking-[0.1rem] text-neutral-verydark lg:text-5xl leading-[1.3] ">
-            Read together, grow together
-          </h2>
-          <ul class="flex flex-col items-start justify-center gap-4">
-            <li class="flex items-center justify-center gap-6 text-xl font-normal font-Inter text-neutral-dark">
-              <img src="../images/icon-check.svg" alt="icon-check" />Monthly
-              curated tech reads selected by industry experts
-            </li>
-            <li class="flex items-center justify-center gap-6 text-xl font-normal font-Inter text-neutral-dark">
-              <img src="../images/icon-check.svg" alt="icon-check" />Virtual and
-              in-person meetups for deep-dive discussions
-            </li>
-            <li class="flex items-center justify-center gap-6 text-xl font-normal font-Inter text-neutral-dark">
-              <img src="../images/icon-check.svg" alt="icon-check" />Early access
-              to new tech book releases
-            </li>
-            <li class="flex items-center justify-center gap-6 text-xl font-normal font-Inter text-neutral-dark">
-              <img src="../images/icon-check.svg" alt="icon-check" />Author Q&A
-              sessions with tech thought leaders
-            </li>
-          </ul>
-        </div>
-        <picture class="lg:w-4/6">
-          <source srcset="/assets/images/image-read-together-desktop.webp" media="(min-width: 1200px)" />
-          <source srcset="/assets/images/image-read-together-tablet.webp" media="(min-width: 768px)" />
-          <source srcset="/assets/images/image-read-together-mobile.webp" media="(max-width: 767px)" />
-          <img class="rounded-3xl " src="../images/image-read-together-mobile.webp" alt="image-read-together" />
-        </picture>
+  <!-- Main -->
+  <main>
+    <!-- Transform Section -->
+    <section class="section transform">
+      <div class="text">
+        <h2>Transform your brand</h2>
+        <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <a href="#" class="link-yellow">Learn more</a>
       </div>
-
-      <div class="flex flex-col items-start justify-center gap-10 second_item lg:flex-row lg:gap-20 lg:items-center ">
-        <div class="flex flex-col items-start justify-start gap-6 second_item_note ">
-          <h2
-            class="text-neutral-verydark tracking-[-2px] font-Martian  leading-[1.3] lg:leading-[1.3] lg:w-full lg:bg-bottom-lg font-semibold text-4xl md:text-5xl lg:text-5xl bg-patternCircle w-[60%] bg-no-repeat md:bg-25% bg-50% bg-left-bottom md:bg-bottom-md">
-            Not your average book club
-          </h2>
-          <p class="text-xl font-normal tracking-tight font-Inter leading-[1.4] letter-spacing text-neutral-dark">
-            Connect with a community that speaks your language - from
-            <span class="font-semibold">Python</span> to
-            <span class="font-semibold">TypeScript</span> and everything in between.
-            Our discussions blend technical depth with practical applications.
-          </p>
-          <img class="hidden md:block md:absolute lg:right-[34rem] lg:top-[92rem] md:top-[212rem] md:right-[3rem]" src="../images/logos-tech.svg" alt="logos-tech" />
-
-        </div>
-        <picture>
-          <source srcset="/assets/images/image-not-average-desktop.webp" media="(min-width: 1200px)" />
-          <source srcset="/assets/images/image-not-average-tablet.webp" media="(min-width: 768px)" />
-          <source srcset="/assets/images/image-not-average-mobile.webp" media="(max-width: 767px)" />
-          <img class="rounded-3xl " src="../images/image-not-average-mobile.webp" alt="image-not-average-" />
-        </picture>
-        
+      <div class="image">
+        <img src="../images/mae-mu-40NjbC-Q-cw-unsplash (4).jpg" alt="Transform" />
       </div>
-      <div
-        class="flex-col items-center self-stretch justify-center hidden w-full gap-16 py-20 m-auto mt-32 bg-left-top rounded-2xl tech_journey lg:flex lg:bg-light lg:bg-glow lg:bg-no-repeat">
-        <h1 class="w-[55%] leading-[1.3] text-5xl font-semibold text-center text-neutral-verydark font-Martian">Your tech
-          reading
-          journey</h1>
-        <div class="flex items-center gap-6 m-auto justify-evenly tech_cards">
-          <div class="flex flex-wrap justify-between gap-4 1 w-[20%]">
-            <p class="px-2 py-0.5 text-2xl font-normal border-2 rounded-md font-Martian border-neutral-verydark">1</p>
-            <img src="../images/pattern-arrow.svg" alt="pattern-arrow" />
-            <p class="text-lg leading-[1.3] font-semibold font-Martian">Choose your membership tier</p>
-          </div>
-          <div class="flex flex-wrap justify-between gap-2 2 w-[20%]">
-            <p class="px-2 py-0.5 text-2xl font-normal border-2 rounded-md font-Martian border-neutral-verydark">2</p>
-            <img src="../images/pattern-arrow.svg" alt="pattern-arrow" />
-            <p class="text-lg leading-[1.3] font-semibold font-Martian">Get your monthly book selection</p>
-          </div>
-          <div class="flex flex-wrap justify-between gap-2 3 w-[20%] ">
-            <p class="px-2 py-0.5 text-2xl font-normal border-2 rounded-md font-Martian border-neutral-verydark">3</p>
-            <img src="../images/pattern-arrow.svg" alt="pattern-arrow" />
-            <p class="text-lg leading-[1.3] font-semibold font-Martian">Join our discussion forums</p>
-          </div>
-          <div class="flex flex-wrap justify-between gap-2 4 w-[20%] ">
-            <p class="px-2 py-0.5 text-2xl font-normal border-2 rounded-md font-Martian border-neutral-verydark">4</p>
-            <img class="hidden" src="../images/pattern-arrow.svg" alt="pattern-arrow" />
-            <p class="text-lg leading-[1.3] font-semibold font-Martian">Attend exclusive meetups</p>
-          </div>
+    </section>
+
+    <!-- Stand Out Section -->
+    <section class="section standout">
+      <div class="image">
+        <img src="../images/mae-mu-40NjbC-Q-cw-unsplash (5).jpg" alt="Stand Out" />
+      </div>
+      <div class="text">
+        <h2>Stand out to the right audience</h2>
+        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+        <a href="#" class="link-red">Learn more</a>
+      </div>
+    </section>
+
+    <!-- Graphic Design & Photography Section -->
+    <section class="section services">
+      <div class="service graphic">
+        <img src="../images/mae-mu-vbAEHCrvXZ0-unsplash (1).png" alt="Graphic Design" />
+        <div class="overlay">
+          <h3>Graphic Design</h3>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
         </div>
       </div>
-
-      <div
-        class="flex flex-col items-start justify-center w-full gap-6 pricing lg:w-[95%] lg:items-center lg:m-auto lg:text-center ">
-        <h1 class="text-4xl word-spacing leading-[1.3] w-2/3 font-semibold font-Martian text-neutral-verydark">
-          Membership Options
-        </h1>
-        <div class="flex flex-col items-stretch w-full gap-6 pricing_cards md:flex-row md:flex-wrap">
-          <div
-            class="flex flex-col items-start justify-center gap-6 p-6 border-2 rounded-lg card md:w-[45%] lg:w-[30%]   lg:flex-grow-[0.8] lg:h-fit lg:m-auto  border-neutral-light">
-            <div class="flex flex-col items-start justify-center gap-6 pricing_header">
-              <h3 class="text-2xl font-semibold font-Martian text-neutral-verydark">
-                Starter
-              </h3>
-              <h2 class="text-4xl font-semibold font-Martian text-neutral-verydark">
-                $19
-                <span class="text-xl font-normal font-Inter text-neutral-dark">/month</span>
-              </h2>
-            </div>
-            <hr class="w-full h-1 text-neutral-default" />
-            <div class="pricing_features">
-              <ul class="flex flex-col items-start justify-center gap-4">
-                <li
-                  class="flex flex-row items-center justify-start gap-4 text-xl font-normal font-Inter text-neutral-dark">
-                  <img src="../images/icon-check.svg" alt="icon-check" />1
-                  book/month
-                </li>
-                <li
-                  class="flex flex-row items-center justify-start gap-4 text-xl font-normal font-Inter text-neutral-dark">
-                  <img src="../images/icon-check.svg" alt="icon-check" />Online
-                  forums
-                </li>
-              </ul>
-            </div>
-            <a class="w-full py-4 mt-2 text-base font-semibold text-center border-4 rounded-lg bg-salmon-default border-neutral-verydark font-Martian text-neutral-verydark"
-              href="#">SUBSCRIBE NOW</a>
-          </div>
-          <div
-            class="flex flex-col items-start justify-center gap-6 p-6 border-2 rounded-lg card md:w-[45%] lg:flex-grow-[1] lg:w-[30%] h-auto  lg:bg-light self-stretch  lg:bg-glow lg:bg-no-repeat bg-left-top lg:py-10	  border-neutral-light">
-            <div class="flex flex-col items-start justify-center gap-6 pricing_header">
-              <h3 class="text-2xl font-semibold font-Martian text-neutral-verydark">
-                Pro
-              </h3>
-              <h2 class="text-4xl font-semibold font-Martian text-neutral-verydark">
-                $29
-                <span class="text-xl font-normal font-Inter text-neutral-dark">/month</span>
-              </h2>
-            </div>
-            <hr class="w-full h-1 text-neutral-default" />
-            <div class="pricing_features">
-              <ul class="flex flex-col items-start justify-center gap-4">
-                <li
-                  class="flex flex-row items-center justify-start gap-4 text-xl font-normal font-Inter text-neutral-dark">
-                  <img src="../images/icon-check.svg" alt="icon-check" />2
-                  books/month
-                </li>
-                <li
-                  class="flex flex-row items-center justify-start gap-4 text-xl font-normal font-Inter text-neutral-dark">
-                  <img src="../images/icon-check.svg" alt="icon-check" />Virtual
-                  meetups
-                </li>
-              </ul>
-            </div>
-            <a class="w-full py-4 mt-2 text-base font-semibold text-center border-4 rounded-lg bg-salmon-default border-neutral-verydark font-Martian text-neutral-verydark"
-              href="#">SUBSCRIBE NOW</a>
-          </div>
-          <div
-            class="flex flex-col items-start justify-center gap-6 p-6 border-2 rounded-lg card md:w-[45%] lg:flex-grow-[0.8] lg:w-[30%] lg:h-fit lg:m-auto  border-neutral-light">
-            <div class="flex flex-col items-start justify-center gap-6 pricing_header">
-              <h3 class="text-2xl font-semibold font-Martian text-neutral-verydark">
-                Enterprise
-              </h3>
-              <h2 class="text-4xl font-semibold font-Martian text-neutral-verydark">
-                Custom
-              </h2>
-            </div>
-            <hr class="w-full h-1 text-neutral-default" />
-            <div class="pricing_features">
-              <ul class="flex flex-col items-start justify-center gap-4">
-                <li
-                  class="flex flex-row items-center justify-start gap-4 text-xl font-normal font-Inter text-neutral-dark">
-                  <img src="../images/icon-check.svg" alt="icon-check" />Team
-                  access
-                </li>
-                <li
-                  class="flex flex-row items-center justify-start gap-4 text-xl font-normal font-Inter text-neutral-dark">
-                  <img src="../images/icon-check.svg" alt="icon-check" />Private
-                  sessions
-                </li>
-              </ul>
-            </div>
-            <a class="w-full py-4 mt-2 text-base font-semibold text-center border-4 rounded-lg bg-salmon-default border-neutral-verydark font-Martian text-neutral-verydark"
-              href="#">TALK TO US</a>
-          </div>
+      <div class="service photography">
+        <img src="../images/mae-mu-U1iYwZ8Dx7k-unsplash.png" alt="Photography" />
+        <div class="overlay">
+          <h3>Photography</h3>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
         </div>
       </div>
+    </section>
 
-      <div
-        class="flex flex-col items-start justify-center gap-8 ratings lg:w-10/12 lg:items-center lg:m-auto lg:text-center ">
-        <div class="flex flex-row items-center justify-start star_images">
-          <img src="../images/icon-star.svg" alt="icon-star" />
-          <img src="../images/icon-star.svg" alt="icon-star" />
-          <img src="../images/icon-star.svg" alt="icon-star" />
-          <img src="../images/icon-star.svg" alt="icon-star" />
-          <img src="../images/icon-star.svg" alt="icon-star" />
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h4>Client Testimonials</h4>
+      <div class="testimonials__cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="../images/image-emily.jpg" alt="Emily" />
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <h5>Emily R.</h5>
+          <span>Marketing Director</span>
         </div>
-        <h3 class="text-2xl font-semibold md:text-4xl lg:tracking-[-1px] font-Martian text-neutral-verydark">
-          "This book club transformed my technical reading from a solitary activity
-          into an enriching community experience. The discussions are gold!"
-        </h3>
-        <p class="text-xl font-normal font-Inter text-neutral-dark">
-          Sarah Chen, Software Architect
-        </p>
-      </div>
-      
-  </div>
-  <div
-        class="flex flex-col items-center justify-center w-full px-4 mt-16 rounded-t-xl cta_footer bg-neutral-verydark text-neutral-light">
-        <div class="flex flex-col gap-10 pt-12 text-center md:w-10/12 cta">
-          <h2
-            class="text-4xl lg:text-6xl w-5/5 md:text-5xl md:w-[99.5%] md:leading-[1.3]  font-semibold font-Martian leading-[1.3] lg:w-3/5 lg:leading-[1.3]  m-auto">
-            Ready to debug your reading list?
-          </h2>
-          <div class="flex flex-col items-start justify-center gap-6 option_bottom md:w-2/3 md:m-auto lg:w-1/3">
-            <a class="flex flex-row w-full py-4 text-base font-semibold text-white border-4 border-white justify-evenly font-Martian rounded-xl"
-              href="#">Review membership options
-              <img src="../images/icon-arrow-up.svg" alt="icon-arrow-up" /></a>
-            <div class="flex justify-center gap-3 mb-16 options_rating">
-              <img src="../images/image-avatars.webp" alt="image-avatars" class="max-sm:w-1/2 testimonial_images" />
-              <div class="flex flex-col items-start justify-center rating">
-                <div class="flex items-start justify-start star_images">
-                  <img src="../images/icon-star.svg" alt="icon-star" />
-                  <img src="../images/icon-star.svg" alt="icon-star" />
-                  <img src="../images/icon-star.svg" alt="icon-star" />
-                  <img src="../images/icon-star.svg" alt="icon-star" />
-                  <img src="../images/icon-star.svg" alt="icon-star" />
-                </div>
-                <p class="text-sm text-left font-Martian text-neutral-light">
-                  200+ developers joined already
-                </p>
-              </div>
-            </div>
-          </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="../images/image-thomas.jpg" alt="Thomas" />
+          <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <h5>Thomas S.</h5>
+          <span>Chief Operating Officer</span>
         </div>
-        <hr class="w-full h-1 lg:w-11/12 lg:m-auto text-neutral-default" />
-        <div
-          class="flex flex-col items-center justify-center gap-4 px-8 py-6 md:px-0 md:w-full lg:w-11/12 lg:m-auto md:justify-between md:flex-row footer">
-          <p class="text-sm font-normal font-Martian text-neutral-default">
-            © 2024 - Tech Book Club
-          </p>
-
-          <div class="flex w-1/3 md:w-1/4 justify-evenly footer_logos">
-            <img src="../images/logo-bluesky.svg" alt="logo-bluesky" />
-            <img src="../images/logo-linkedin.svg" alt="logo-linkedin" />
-          </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="../images/image-jennie.jpg" alt="Jennie" />
+          <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <h5>Jennie F.</h5>
+          <span>Business Owner</span>
         </div>
       </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+      <img src="../images/Bitmap (6).jpg" alt="Milkbottles" />
+      <img src="../images/Bitmap (13).png" alt="Orange" />
+      <img src="../images/Bitmap (14).png" alt="Cone" />
+      <img src="../images/Bitmap (16).png" alt="Sugarcubes" />
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__logo">sunnyside</div>
+    <div class="footer__links">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
     </div>
+    <div class="footer__socials">
+      <a href="#"><img src="../images/icon-facebook.svg" alt="Facebook" /></a>
+      <a href="#"><img src="../images/icon-instagram.svg" alt="Instagram" /></a>
+      <a href="#"><img src="../images/icon-twitter.svg" alt="Twitter" /></a>
+      <a href="#"><img src="../images/icon-pinterest.svg" alt="Pinterest" /></a>
+    </div>
+  </footer>
+  
 </body>
-
 </html>

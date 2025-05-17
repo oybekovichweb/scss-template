@@ -1,0 +1,92 @@
+/* layout/_home.scss */
+
+// === Transform Section ===
+.transform,
+.standout {
+  display: flex;
+  flex-wrap: wrap;
+
+  .text, .image {
+    flex: 1 1 50%;
+  }
+
+  .text {
+    padding: 4rem;
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: hsl(212, 27%, 19%);
+    }
+
+    p {
+      margin-bottom: 2rem;
+      color: hsl(232, 10%, 55%);
+    }
+
+    .link-yellow,
+    .link-red {
+      font-family: 'Fraunces', serif;
+      text-transform: uppercase;
+      font-weight: 900;
+      border-bottom: 4px solid transparent;
+      padding-bottom: 4px;
+      transition: border-color 0.3s;
+
+      &.link-yellow:hover {
+        border-color: hsl(51, 100%, 49%);
+      }
+
+      &.link-red:hover {
+        border-color: hsl(7, 99%, 70%);
+      }
+    }
+  }
+
+  .image img {
+    width: 100%;
+    display: block;
+  }
+}
+
+// === Services Section ===
+.services {
+  display: flex;
+  flex-wrap: wrap;
+
+  .service {
+    flex: 1 1 50%;
+    position: relative;
+    text-align: center;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: hsl(167, 40%, 24%);
+      width: 80%;
+
+      h3 {
+        font-family: 'Fraunces', serif;
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+        margin-top: 1rem;
+      }
+    }
+
+    &.photography .overlay {
+      color: hsl(198, 62%, 26%);
+    }
+  }
+}
